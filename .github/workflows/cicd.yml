@@ -12,6 +12,9 @@ on:
     types: [opened, synchronize, closed]
     branches: [develop, main]
 
+env:
+  TF_VAR_GOOGLE_PROJECT: ${{ secrets.GOOGLE_PROJECT }}
+
 jobs:
   infracost-pull-request-checks:
     name: Infracost Pull Request Checks
