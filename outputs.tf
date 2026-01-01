@@ -3,7 +3,8 @@ output "config_host" {
 }
 
 output "config_token" {
-  value = data.google_client_config.current.access_token
+  value     = data.google_client_config.current.access_token
+  sensitive = true
 }
 
 output "config_ca" {

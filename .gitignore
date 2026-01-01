@@ -1,0 +1,4 @@
+# Do not include Terraform states and initiated modules
+*.tfstate*
+.terraform/
+.terraform.lock.hcl
