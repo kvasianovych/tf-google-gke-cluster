@@ -11,6 +11,7 @@ resource "google_container_cluster" "this" {
   name     = var.GKE_CLUSTER_NAME
   location = var.GOOGLE_REGION
 
+  deletion_protection      = false
   initial_node_count       = 1
   remove_default_node_pool = true
 
